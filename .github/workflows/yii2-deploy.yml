@@ -1,4 +1,4 @@
-name: FTP Deploy Yii2 App
+name: 🚀 FTP Deploy to InfinityFree
 
 on:
   push:
@@ -7,19 +7,18 @@ on:
 
 jobs:
   deploy:
-    name: 📦 Deploy Yii2 App to Shared Hosting
+    name: 📤 Deploy to InfinityFree via FTP
     runs-on: ubuntu-latest
 
     steps:
       - name: 📥 Checkout Code
         uses: actions/checkout@v3
 
-      - name: 📦 Deploy via FTP
-        uses: appleboy/scp-action@v0.1.7
+      - name: 📤 FTP Upload
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: ${{ secrets.FTP_HOST }}
+          server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          port: 21
-          source: "./"
-          target: "/htdocs/"
+          server-dir: /htdocs/
+          local-dir: ./
