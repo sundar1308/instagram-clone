@@ -1,0 +1,422 @@
+main > .container {
+  padding: 70px 15px 20px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  font-size: 0.9em;
+  height: 60px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.not-set {
+  color: #c55;
+  font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after,
+a.desc:after {
+  content: "";
+  left: 3px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  margin: 4px 4px 2px 4px;
+  background: transparent;
+}
+
+a.asc:after {
+  border-bottom: solid 7px #212529;
+  border-top-width: 0;
+}
+
+a.desc:after {
+  border-top: solid 7px #212529;
+  border-bottom-width: 0;
+}
+
+.grid-view th {
+  white-space: nowrap;
+}
+
+.hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999;
+}
+
+.error-summary {
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+  padding-top: 7px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 767px) {
+  .nav li > form > button.logout {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+  outline: none;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Custom css */
+
+.like-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-right: 22px;
+}
+
+.heart {
+  width: 10px;
+  height: 10px;
+  background-color: #e0e0e0;
+  position: relative;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 91%;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.heart::before {
+  left: 0px;
+  top: -7px;
+  rotate: 85deg;
+  border-top-right-radius: 0 !important;
+}
+
+.heart::after {
+  left: 5px;
+  top: -12px;
+  border-bottom-right-radius: 0 !important;
+}
+
+.like-button.active .heart {
+  background-color: #f44336;
+  /* Red color */
+  /* transform: rotate(45deg) scale(1.5); */
+}
+
+.like-button.active .heart::before,
+.like-button.active .heart::after {
+  background-color: #f44336;
+}
+body a {
+  text-decoration: none;
+}
+.profile_container .profile_info .info p.name a {
+  padding: 5px 15px;
+  font-size: 15px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  background-color: rgb(239, 239, 239);
+  color: #000;
+}
+/* #image-upload{
+    display: none;
+} */
+
+.commentLike-button.active .heart::before,
+.commentLike-button.active .heart::after {
+  background-color: #f44336;
+}
+.commentLike-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 22px;
+}
+
+#image-upload {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  opacity: 0;
+}
+.field-image-upload {
+  margin-bottom: 0 !important;
+}
+.replyToPerson{
+  max-width: 100px;
+}
+.followersList .img img{
+  border-radius: 30px;
+  width: 32px;
+  height: 32px;
+}
+.followersList #follower .content h6{ 
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.followersList #follower .content span{
+  color: rgb(168, 168, 168);
+  font-size: 14px;
+  margin-left: 10px;
+}
+.followersList #follower .followStatusBtn, .followersList #follower .followingStatusBtn{
+  padding: 5px 15px;
+  font-size: 15px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  background-color: rgba(85, 85, 85, 0.7);
+  color: #fff;
+}
+.followersList .follow{
+  padding: 5px 15px;
+    font-size: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    color: #fff;
+}
+.person .username{
+  font-size: 16px;
+  font-weight: 600;
+
+}
+.nick_name{
+  color: rgb(151 151 151);
+  font-size: 14px;
+}
+
+.greyBtn{
+  background: rgba(85, 85, 85, 0.7);
+  color: #fff;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+
+}
+.greyBtn:hover{
+  background-color: rgb(54, 54, 54);
+  color: #fff;
+}
+.blueBtn{
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+#followersModal .modal-header h5, #followingModal .modal-header h5{
+  font-weight: 600;
+}
+
+/* Dark Theme */
+#message_modal .modal-content{
+  height: 400px;
+}
+#message_modal .modal-body {
+  position: relative;  /* Ensure the modal-body is the reference for the sticky form */
+  padding-bottom: 60px; /* Provide space for the sticky footer */
+  overflow-y: auto;    /* Make the modal body scrollable */
+}
+
+#message_modal .modal-footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff !important;
+  z-index: 1;  /* Ensure it is above the rest of the modal content */
+  padding: 10px 15px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  /* Optional: adds shadow to the footer */
+}
+
+#message_modal .input {
+  display: flex;
+  align-items: center;
+}
+
+#message_modal .input img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+#message_modal .input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  border: none;
+}
+#message_modal .modal-footer form .input input{
+  padding: 3px 10px !important;
+
+}
+
+
+#message_modal .modal-body {
+    padding-bottom: 70px;  /* Space for the footer */
+}
+
+#message_modal .modal-body::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+}
+
+#message_modal .modal-body {
+    -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer 10+ */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+.followers_container .cart  img{
+  height: 56px !important ;
+}
+.followers_container div .suggestions .cart img{
+  height: 45px !important;
+}
+.profile_container .profile_info .cart .img img{
+  height: 150px !important;
+}
+@media(max-width:800px) {
+  #second_container {
+    width: 80%;     /* Adjust width relative to the parent container */
+    margin: auto;
+  }
+
+  .fix_top .nav {
+    width: 11vw;    /* Set width relative to the viewport width */
+    padding: 2vw !important;   /* Adjust padding for smaller screens */
+  }
+}
+@media(max-width:768px) {
+  .fix_top .nav{
+    display: none;
+  }
+  .post_page .modal-dialog{
+      width: 400px;
+    
+  }
+}
+@media(max-width:768px) {
+  .fix_top .nav{
+    display: none;
+  }
+  .post_page .modal-dialog{
+    align-items: baseline;
+    width: 300px;
+    
+  }
+}
+
+
+
+#second_container{
+  width: 82vw;
+  margin-left: auto;
+
+}
+.profile_container .highlights .img{
+  width: 70px !important;
+  height: 70px !important;
+}
+.profile_container .highlights .img img{
+  height: 100% !important;
+}
+
+/* Loader Css */
+.postComment{
+  font-weight: 600;
+  margin-right: 10px;
+}
+.post_page .modal-dialog{
+  margin: auto;
+
+}
+.showNotification{
+  left: 208px !important;
+}
+.notifications .cart .img img{
+  height: 56px;
+}
+
+
+/* Notification css */
+.notification_icon {
+  position: relative;
+}
+
+.notification_icon .notificationBadge {
+  position: absolute;
+  top: -10px;
+  padding: 0px 7px !important;
+  border-radius: 50%;
+  background: #f44336;
+  color: white;
+  left: -16px;
+}
+.messageContainer form{
+  position: absolute;
+
+}
+ #message .message_container #emoji{
+  height: 32px;
+  min-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  top: 0;
+  left: 12px;
+  bottom: 68px;
+  right: 24px;
+  padding: 6px 16px;
+  font-size: inherit;
+  color: #555;
+  border-radius: 22px;
+  border: 1px solid rgb(142, 142, 142);
+ }
+ .persons {
+  overflow-y: scroll;
+ }
+ .messageContainer{
+  position: relative;
+ }
