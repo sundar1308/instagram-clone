@@ -67,7 +67,7 @@ use yii\helpers\Url;
                     <li>
                         <a href="<?= Url::to(['/profile/index']) ?>">
                             <img class="circle story" src="<?= User::getAuthUserProfileImage() ?>">
-                            <span class="d-none   d-lg-block ">Profile</span>
+                            <span class="d-none   d-lg-block    ">Profile</span>
                         </a>
                     </li>
                 </ul>
