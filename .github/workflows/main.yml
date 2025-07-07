@@ -32,9 +32,9 @@ jobs:
       - name: ?? Deploy via SSH
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.SSH_PASS }}
+       server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
           port: 21
           script: |
             cd /var/www/html/yii2-app
