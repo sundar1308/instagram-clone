@@ -17,7 +17,7 @@ jobs:
       - name: ?? Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: "8.1"
+          php-version: '8.1'
           extensions: mbstring, intl, pdo, pdo_mysql
           ini-values: post_max_size=256M, upload_max_filesize=256M
 
@@ -35,7 +35,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASS }}
-          port: 21
+            port: 21
           script: |
             cd /var/www/html/yii2-app
             git pull origin main
