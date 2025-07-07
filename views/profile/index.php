@@ -17,7 +17,7 @@ use yii\helpers\StringHelper;
 
 <div class="profile_container">
     <div class="profile_info">
-        <p>sun</p>
+        <p>sun </p>
 
         <div class="cart">
             <div class="img">
