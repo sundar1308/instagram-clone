@@ -14,8 +14,10 @@ use yii\helpers\StringHelper;
 
 
 <!-- Profile Container start -->
+
 <div class="profile_container">
     <div class="profile_info">
+        <p>test</p>
         <div class="cart">
             <div class="img">
                 <img src='<?= $model->getProfileimage() ?>'>
